@@ -614,7 +614,7 @@ window.playerGear={
             cost:['10000000 honey','3 enzymes','1 glue','1 glitter'],
         },
 
-        honeyMask:{
+  honeyMask:{
             
             mesh:function(box,cylinder,sphere){
                 
@@ -629,21 +629,21 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=1.75
-                stats.bluePollen*=1.4
-                stats.whitePollen*=1.4
-                stats.redPollen*=1.4
+                stats.capacityMultiplier*=5
+                stats.bluePollen*=3
+                stats.whitePollen*=3
+                stats.redPollen*=3
                 stats.pollenFromBees*=1.35
                 stats.defense+=0.3
                 stats.redBeeAbilityRate*=1.15
                 stats.blueBeeAbilityRate*=1.15
                 stats.whiteBeeAbilityRate*=1.15
                 stats.honeyFromTokens*=1.5
-                stats.convertRate*=1.8
+                stats.convertRate*=3
                 player.addEffect('coinScatterPassive')
 
             },
-            desc:'This handsome mask is guaranteed to bring satisfaction into your life.<br><br>x1.75 capacity<br>x1.4 pollen<br>x1.35 pollen from bees<br>x1.15 bee ability rate<br>x1.5 honey from tokens<br>x1.8 convert rate<br>+30% defense<br>+Passive: Coin Scatter',
+            desc:'This handsome mask is guaranteed to bring satisfaction into your life. HONEY BEE BLESSED THIS MASK<br><br>x5 capacity<br>x9 pollen<br>x1.35 pollen from bees<br>x1.15 bee ability rate<br>x1.5 honey from tokens<br>x1.8 convert rate<br>+30% defense<br>+Passive: Coin Scatter',
             cost:['75000000 honey','35 oil','15 enzymes','1 goldEgg','999 treat'],
         },
 
