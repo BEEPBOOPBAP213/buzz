@@ -726,25 +726,25 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=2
-                stats.whiteFieldCapacity*=1.75
-                stats.goo*=1.75
+                stats.capacityMultiplier*=13
+                stats.whiteFieldCapacity*=4
+                stats.goo*=4
                 stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
-                stats.redBeeAbilityRate*=1.2
-                stats.blueBeeAbilityRate*=1.2
-                stats.whiteBeeAbilityRate*=1.2
+                stats.redBeeAbilityRate*=1.5
+                stats.blueBeeAbilityRate*=1.5
+                stats.whiteBeeAbilityRate*=1.5
                 stats.bluePollen*=1.35
                 stats.whitePollen*=1.35
                 stats.redPollen*=1.35
-                stats.whitePollen*=1.5
-                stats.honeyFromTokens*=1.5
-                stats.convertRate*=1.75
+                stats.whitePollen*=9
+                stats.honeyFromTokens*=5
+                stats.convertRate*=3
                 stats.defense+=0.3
                 player.addEffect('gummyMorphPassive')
                 player.addEffect('coinScatterPassive')
 
             },
-            desc:'The offical mask of a gummy general.<br><br>x1.75 goo<br>x2 capacity<br>x1.75 white field capacity<br>x1.5 white pollen<br>x1.35 pollen<br>+25% instant white conversion<br>x1.5 honey from tokens<br>x1.75 convert rate<br>+30% defense<br>x1.2 bee ability rate<br>+Passive: Gummy Morph<br>+Passive: Coin Scatter',
+            desc:'The offical mask of a gummy general. Fit for a Gummy Bear too lazy to update description but crazy stats<br><br>x1.75 goo<br>x2 capacity<br>x1.75 white field capacity<br>x1.5 white pollen<br>x1.35 pollen<br>+25% instant white conversion<br>x1.5 honey from tokens<br>x1.75 convert rate<br>+30% defense<br>x1.2 bee ability rate<br>+Passive: Gummy Morph<br>+Passive: Coin Scatter',
             cost:['90000000 honey','25 glue','5 enzymes','15 oil','25 glitter'],
         },
         
@@ -819,7 +819,7 @@ window.playerGear={
             
             },           
             desc:'Embrace RED HIVE. Dont fall for the propoganda.',
-            cost:['5000000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
+            cost:['500000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
         },
     },
     
