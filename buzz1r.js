@@ -32,10 +32,10 @@ window.playerGear={
 
         silverSoakers:{
 
-            count:2,
-            diameter:10,
-            power:0.2,
-            rate:3.5,
+            count:123213213,
+            diameter:15,
+            power:0.8,
+            rate:1.75,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y,z,0.125,1.25,10,0.7,0.7,0.7,1,90,0,0)
@@ -52,10 +52,10 @@ window.playerGear={
 
         goldenGushers:{
 
-            count:3,
-            diameter:11,
-            power:0.25,
-            rate:3.5,
+            count:34444,
+            diameter:20,
+            power:1,
+            rate:1.5,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y,z,0.125,1.25,10,0.9,0.9,0.2,1,90,0,0)
@@ -92,10 +92,10 @@ window.playerGear={
         
         superSaturator:{
 
-            count:1,
-            diameter:15,
-            power:0.5,
-            rate:1,
+            count:5,
+            diameter:50,
+            power:1,
+            rate:0.5,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y+0.25,z,0.15,2.5,10,0.9,0.9,0.5,1,90,0,0)
@@ -117,7 +117,7 @@ window.playerGear={
                 cylinder(x,y+0.7,z,0.1,0.5,10,0.2,10,10,0,0,0,0.1,false)
             },
             desc:'The ultimate sprinkler. Nobody knows how it works or where it came from.<br><br>Count: 1<br>Diameter: 15<br>Power: 50<br>Rate: 1s<br><br>Press "R" to place a sprinkler.',
-            cost:['55555555555 honey'],
+            cost:['555555555555 honey'],
         }
     },
     
@@ -524,13 +524,13 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.bluePollen*=1.15
-                stats.whitePollen*=1.15
-                stats.redPollen*=1.15
+                stats.bluePollen*=1.2
+                stats.whitePollen*=1.25
+                stats.redPollen*=1.3
                 stats.defense+=0.1
 
             },
-            desc:'A hard hat that grants bonus pollen and helps prevent head injuries.<br><br>x1.15 pollen<br>+10% defense',
+            desc:'A hard hat that grants bonus pollen and helps prevent head injuries. Sturdy<br><br>x1.15 pollen<br>+10% defense',
             cost:['30000 honey','1 pineapple'],
         },
 
@@ -571,17 +571,17 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.bluePollen*=1.2
-                stats.whitePollen*=1.2
-                stats.redPollen*=1.2
-                stats.jumpPower*=1.1
-                stats.redBeeAbilityRate*=1.05
-                stats.blueBeeAbilityRate*=1.05
-                stats.whiteBeeAbilityRate*=1.05
+                stats.bluePollen*=1.3
+                stats.whitePollen*=1.3
+                stats.redPollen*=1.3
+                stats.jumpPower*=1.2
+                stats.redBeeAbilityRate*=1.2
+                stats.blueBeeAbilityRate*=1.2
+                stats.whiteBeeAbilityRate*=1.2
                 stats.defense+=0.1
 
             },
-            desc:'A playful hat that keeps the sun out of your eyes.<br><br>x1.2 pollen<br>x1.05 bee ability rate<br>+10% defense<br>x1.1 jump power',
+            desc:'A playful hat that keeps the sun out of your eyes. Super Fun<br><br>x1.3 pollen<br>x1.2 bee ability rate<br>+10% defense<br>x1.4 jump power',
             cost:['2500000 honey','15 gumdrops','10 pineapple','1 moonCharm'],
         },
 
@@ -600,17 +600,17 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.bluePollen*=100
-                stats.whitePollen*=1.25
-                stats.redPollen*=1.25
-                stats.pollenFromBees*=1.22
+                stats.bluePollen*=1.75
+                stats.whitePollen*=1.5
+                stats.redPollen*=1.6
+                stats.pollenFromBees*=1.5
                 stats.defense+=0.25
-                stats.redBeeAbilityRate*=1.1
-                stats.blueBeeAbilityRate*=1.1
-                stats.whiteBeeAbilityRate*=1.1
+                stats.redBeeAbilityRate*=1.3
+                stats.blueBeeAbilityRate*=1.3
+                stats.whiteBeeAbilityRate*=1.3
 
             },
-            desc:'A veiled hat only worn by real-deal beekeepers.<br><br>x1.25 pollen<br>x1.25 pollen from bees<br>x1.1 bee ability rate<br>+25% defense',
+            desc:'A veiled hat only worn by real-deal beekeepers.<br><br>x1.75 pollen<br>x1.5 pollen from bees<br>x1.3 bee ability rate<br>+25% defense',
             cost:['10000000 honey','3 enzymes','1 glue','1 glitter'],
         },
 
@@ -662,22 +662,22 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=1.75
-                stats.redPollen*=1.6
+                stats.capacityMultiplier*=2.25
+                stats.redPollen*=2.25
                 stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,0.2)
                 stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,0.5)
                 stats.defense+=0.35
-                stats.redBeeAbilityRate*=1.15
-                stats.blueBeeAbilityRate*=1.15
-                stats.whiteBeeAbilityRate*=1.15
+                stats.redBeeAbilityRate*=1.5
+                stats.blueBeeAbilityRate*=1
+                stats.whiteBeeAbilityRate*=0.8
                 stats.redBeeAttack+=2
                 stats.whiteBeeAttack++
                 stats.blueBeeAttack++
                 player.addEffect('ignitePassive')
 
             },
-            desc:'Ignite your mind to enhance your red bees.<br><br>x1.75 capacity<br>x1.6 red pollen<br>+20% instant red conversion<br>+50% instant flame conversion<br>+1 bee attack<br>+1 red bee attack<br>x1.15 bee ability rate<br>+35% defense<br>+Passive: Ignite',
-            cost:['50000000 honey','30 redExtract','15 enzymes','5 glue','300 strawberry'],
+            desc:'Ignite your mind to enhance your red bees. Embrace Red<br><br>x2.25 capacity<br>x2.25 red pollen<br>+20% instant red conversion<br>+50% instant flame conversion<br>+1 bee attack<br>+1 red bee attack<br>x1.15 bee ability rate<br>+35% defense<br>+Passive: Ignite',
+            cost:['50000000 honey','3 redExtract','1 enzymes','5 glue','30 strawberry'],
         },
 
         bubbleMask:{
@@ -695,19 +695,19 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=2
-                stats.bluePollen*=1.6
+                stats.capacityMultiplier*=3.5
+                stats.bluePollen*=2.15
                 stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.2)
-                stats.bubblePollen*=2
+                stats.bubblePollen*=3.5
                 stats.defense+=0.3
-                stats.redBeeAbilityRate*=1.15
+                stats.redBeeAbilityRate*=1.1
                 stats.blueBeeAbilityRate*=1.15
-                stats.whiteBeeAbilityRate*=1.15
+                stats.whiteBeeAbilityRate*=1.1
                 player.addEffect('bubbleBombsPassive')
 
             },
-            desc:'Harness the power of the sea to enhance your blue pollen gathering.<br><br>x2 capacity<br>x1.6 blue pollen<br>+20% instant blue conversion<br>x2 bubble pollen<br>x1.15 bee ability rate<br>+30% defense<br>+Passive: Bubble Bombs',
-            cost:['50000000 honey','30 blueExtract','15 oil','5 glue','300 blueberry'],
+            desc:'Harness the power of the sea to enhance your blue pollen gathering.<br><br>x3.5 capacity<br>x2.15 blue pollen<br>+20% instant blue conversion<br>x3.5 bubble pollen<br>x1.15 bee ability rate<br>+30% defense<br>+Passive: Bubble Bombs',
+            cost:['50000000 honey','3 blueExtract','5 oil','5 glue','30 blueberry'],
         },
         
         gummyMask:{
@@ -837,11 +837,11 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=5000
-                stats.lootLuck*=1.15
+                stats.capacity+=300000
+                stats.lootLuck*=1.4
                 stats.convertRate*=1.1
             },
-            desc:'Attaches to your waist to expand the size of your container.<br><br>+5,000 capacity<br>x1.15 loot luck<br>x1.1 convert rate',
+            desc:'Attaches to your waist to expand the size of your container. No more sagging<br><br>+300,000 capacity<br>x1.4 loot luck<br>x1.1 convert rate',
             cost:['14000 honey','1 sunflowerSeed'],
         },
 
@@ -856,12 +856,12 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=25000
-                stats.lootLuck*=1.25
+                stats.capacity+=500000
+                stats.lootLuck*=1.4
                 stats.convertRate*=1.3
                 stats.beeSpeed*=1.15
             },
-            desc:'A convenient pouch designed for easy access.<br><br>+25,000 capacity<br>x1.25 loot luck<br>x1.3 convert rate<br>x1.15 bee speed',
+            desc:'A convenient pouch designed for easy access very cool.<br><br>+500,000 capacity<br>x1.4 loot luck<br>x1.3 convert rate<br>x1.15 bee speed',
             cost:['400000 honey','10 pineapple','10 sunflowerSeed','1 stinger'],
         },
 
@@ -881,11 +881,11 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=100000
-                stats.lootLuck*=1.5
+                stats.capacity+=1000000
+                stats.lootLuck*=1.75
                 stats.convertRate*=1.5
             },
-            desc:'A highly-embellished belt bag imported from a lost land, as big as a tambourine.<br><br>+100,000 capacity<br>x1.5 loot luck<br>x1.5 convert rate',
+            desc:'A highly-embellished belt bag imported from a lost land, as big as a tambourine.<br><br>+1,000,000 capacity<br>x1.75 loot luck<br>x1.5 convert rate',
             cost:['5000000 honey','50 pineapple','50 sunflowerSeed','3 stinger'],
         },
         
@@ -933,8 +933,8 @@ window.playerGear={
             applyStats:function(stats,player){
                 
                 stats.capacity+=3000000
-                stats.capacityMultiplier*=3
-                stats.lootLuck*=4
+                stats.capacityMultiplier*=3.25
+                stats.lootLuck*=3.5
                 stats.convertRate*=1.8
                 stats.honeyFromTokens*=3
                 stats.whiteBeeAttack+=2
@@ -998,7 +998,7 @@ window.playerGear={
                 
                 stats.capacity+=3500000
             },
-            desc:'A heavy-duty backpack.<br><br>+350,000 capacity',
+            desc:'A heavy-duty backpack. Blessed by Onett<br><br>+350,000 capacity',
             cost:['50 honey'],
         },
 
@@ -1556,11 +1556,11 @@ window.playerGear={
                 
                 stats.convertRate*=1.1
                 stats.blueBeeAttack+=1
-                stats.capacity+=25000
-                stats.bluePollen*=1.1
+                stats.capacity+=800000
+                stats.bluePollen*=1.5
                 stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.03)
             },
-            desc:'A durable pad worn on the right shoulder of blue beekeepers.<br><br>+25,000 capacity<br>x1.1 blue pollen<br>x1.1 convert rate<br>+3% instant blue conversion<br>+1 blue bee attack',
+            desc:'A durable pad worn on the right shoulder of blue beekeepers. Embrace Blue<br><br>+800,000 capacity<br>x1.5 blue pollen<br>x1.1 convert rate<br>+3% instant blue conversion<br>+1 blue bee attack',
             cost:['1000000 honey','30 blueberry','1 royalJelly','1 moonCharm'],
         },
 
@@ -1578,12 +1578,12 @@ window.playerGear={
                 
                 stats.convertRate*=1.15
                 stats.blueBeeAttack+=1
-                stats.capacity+=75000
-                stats.bluePollen*=1.15
+                stats.capacity+=1100000
+                stats.bluePollen*=1.8
                 stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.05)
                 stats.criticalPower+=0.5
             },
-            desc:'A blue guard reserved for the most dedicated blue beekeepers.<br><br>+75,000 capacity<br>x1.15 blue pollen<br>x1.15 convert rate<br>+5% instant blue conversion<br>+50% critical power<br>+1 blue bee attack',
+            desc:'A blue guard reserved for the most dedicated blue beekeepers.<br><br>+1,100,000 capacity<br>x1.8 blue pollen<br>x1.15 convert rate<br>+5% instant blue conversion<br>+50% critical power<br>+1 blue bee attack',
             cost:['3500000 honey','1 blueExtract','50 blueberry','3 royalJelly','3 moonCharm'],
         },
 
@@ -1601,12 +1601,12 @@ window.playerGear={
                 
                 stats.convertRate*=1.25
                 stats.blueBeeAttack+=1
-                stats.capacity+=150000
-                stats.bluePollen*=1.25 
+                stats.capacity+=1750000
+                stats.bluePollen*=2
                 stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.1)
                 stats.criticalPower+=0.75
             },
-            desc:'A piece of armor forged by the leader of blue bees!<br><br>+150,000 capacity<br>x1.25 blue pollen<br>x1.25 convert rate<br>+10% instant blue conversion<br>+75% critical power<br>+2 blue bee attack',
+            desc:'A piece of armor forged by the leader of blue bees! red sucks<br><br>+1,750,000 capacity<br>x2 blue pollen<br>x1.25 convert rate<br>+10% instant blue conversion<br>+75% critical power<br>+2 blue bee attack',
             cost:['20000000 honey','5 blueExtract','100 blueberry','1 glue','5 moonCharm'],
         },
 
@@ -1622,16 +1622,16 @@ window.playerGear={
             applyStats:function(stats,player){
                 
                 stats.convertRate*=1.4
-                stats.capacity+=300000
-                stats.bluePollen*=1.35
+                stats.capacity+=3500000
+                stats.bluePollen*=2.75
                 stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.2)
-                stats.blueBombPollen*=1.5
+                stats.blueBombPollen*=3
                 stats.blueBeeAttack+=3
                 stats.whiteBeeAttack+=2
                 stats.criticalPower+=1
                 player.addEffect('hastePulserPassive')
             },
-            desc:'A guard bestowed with the heroic power of Cobalt Bee - Defender of the blue bees.<br><br>+300,000 capacity<br>x1.35 blue pollen<br>x1.4 convert rate<br>+20% instant blue conversion<br>x1.5 blue bomb pollen<br>+3 blue bee attack<br>+2 white bee attack<br>+100% critical power<br>+Passive: Haste Pulser',
+            desc:'A guard bestowed with the heroic power of Cobalt Bee - Defender of the blue bees. United with Red<br><br>+3,500,000 capacity<br>x2.75 blue pollen<br>x1.4 convert rate<br>+20% instant blue conversion<br>x1.5 blue bomb pollen<br>+3 blue bee attack<br>+2 white bee attack<br>+100% critical power<br>+Passive: Haste Pulser',
             cost:['200000000 honey','100 blueExtract','15 stinger','50 enzymes','25 glitter'],
         },
     }
