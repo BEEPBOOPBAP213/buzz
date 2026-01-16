@@ -804,22 +804,21 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacityMultiplier*=7
-                stats.redFieldCapacity*=3
-                stats.redPollen*=6.6
-                stats.beeAttack*=3
+                stats.capacityMultiplier*=2
+                stats.redFieldCapacity*=1.75
+                stats.redPollen*=1.75
+                stats.beeAttack*=1.25
                 stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,0.5)
-                stats.flamePollen*=4
-                stats.redBeeAbilityRate*=2.15
-                stats.blueBeeAbilityRate*=0.8
-                stats.whiteBeeAbilityRate*=0.8
-                stats.defense+=0.77
+                stats.flamePollen*=2
+                stats.redBeeAbilityRate*=1.2
+                stats.blueBeeAbilityRate*=1.2
+                stats.whiteBeeAbilityRate*=1.2
+                stats.defense+=0.35
                 player.addEffect('xFlamePassive')
                 player.addEffect('ignitePassive')
-            
-            },           
-            desc:'Embrace RED HIVE. Dont fall for the propoganda.',
-            cost:['500000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
+            },
+            desc:'Embrace hate to take on the form of a Demon Bee. Become both extremely unpleasant and powerful.<br><br>x2 capacity<br>x1.75 red field capacity<br>x1.75 red pollen<br>+50% instant flame conversion<br>x2 flame pollen<br>x1.25 bee attack<br>+35% defense<br>+20% bee ability rate<br>+Passive: X Flame<br>+Passive: Ignite',
+            cost:['5000000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
         },
     },
     
