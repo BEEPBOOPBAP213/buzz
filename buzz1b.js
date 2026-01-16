@@ -820,6 +820,7 @@ window.playerGear={
             },           
             desc:'Embrace RED HIVE. Dont fall for the propoganda.',
             cost:['500000000 honey','350 stinger','250 redExtract','100 enzymes','75 glue'],
+        },
     },
     
     belt:{
